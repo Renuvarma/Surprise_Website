@@ -83,7 +83,11 @@ footer { text-align: center; font-size: .7rem; color: #b08b98; padding-top: 35px
 @keyframes floatUp { 0% { transform: translateY(0) rotate(0); opacity: 0; } 12% { opacity: .55; } 85% { opacity: .35; } 100% { transform: translateY(-110vh) rotate(35deg); opacity: 0; } }
 @media (max-width: 460px) {
   .site-shell { width: min(100% - 22px, 780px); padding-top: 28px; }
-  .memory-grid { gap: 11px; }
+  .memory-grid { 
+    grid-template-columns: 1fr; 
+    gap: 18px; 
+    max-width: 320px;
+  }
   .card-front { padding: 6px 6px 0; }
   .photo-caption { font-size: .78rem; }
   .card-back { padding: 12px; }
