@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4f6">
+  <title>A Little Surprise For You 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <main class="site-shell">
+    <section class="screen active" id="welcome">
+      <div class="eyebrow">MADE WITH LOVE, JUST FOR YOU</div>
+      <div class="envelope" aria-hidden="true">💌</div>
+      <h2>Hey, My favourite person.</h2>
+      <p class="intro">I made a tiny little corner of the internet just for you.<br>Ready to see what's inside?</p>
+      <button class="primary-btn" id="startBtn">Open your surprise <span>♡</span></button>
+      <p class="tiny-note">A little reminder that you mean a lot to me.</p>
+    </section>
+
+    <section class="screen" id="questions">
+      <div class="eyebrow">A FEW LITTLE QUESTIONS</div>
+      <div class="progress"><span id="progressFill"></span></div>
+      <p class="counter" id="questionCounter">QUESTION 1 OF 3</p>
+      <div class="question-heart">♡</div>
+      <h2 id="questionText">Do I make your days a little happier?</h2>
+      <p class="response" id="answerResponse" aria-live="polite">Choose honestly… I'm watching 👀</p>
+      <div class="answer-buttons">
+        <button class="primary-btn answer-btn" data-answer="yes">YES 💗</button>
+        <button class="secondary-btn answer-btn" data-answer="no">NO 🙈</button>
+      </div>
+      <button class="text-btn hidden" id="nextQuestionBtn">Next question →</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <div class="eyebrow">LITTLE PIECES OF US</div>
+      <h2>My favourite kind of memories. ✨</h2>
+      <h3></h3><p class="section-intro">Tap a card to turn it over</p></h3>
+      <div class="memory-grid">
+        <button class="memory-card" type="button" aria-label="Flip memory card one">
+          <span class="card-inner">
+            <span class="card-front">
+              <img src="images/4.jpeg" alt="Romantic sunset illustration">
+              <span class="photo-caption">A moment I'd keep forever</span>
+            </span>
+            <span class="card-back"><span class="quote-mark">“</span><span>I love you more than words can ever say.</span><small>♡ ALWAYS</small></span>
+          </span>
+        </button>
+        <button class="memory-card" type="button" aria-label="Flip memory card two">
+          <span class="card-inner">
+            <span class="card-front">
+              <img src="images/3.jpeg" alt="Two cups of coffee illustration">
+              <span class="photo-caption">Meant to be yours</span>
+            </span>
+            <span class="card-back"><span class="quote-mark">“</span><span>You showed me what love feels like.</span><small>♡ THE LITTLE THINGS</small></span>
+          </span>
+        </button>
+        <button class="memory-card" type="button" aria-label="Flip memory card three">
+          <span class="card-inner">
+            <span class="card-front">
+              <img src="images/5.jpeg" alt="Pink flowers illustration">
+              <span class="photo-caption">Falling for you every day</span>
+            </span>
+            <span class="card-back"><span class="quote-mark">“</span><span>I want to be yours.. Like the moon belongs to the night.</span><small>♡ MY PERSON</small></span>
+          </span>
+        </button>
+        <button class="memory-card" type="button" aria-label="Flip memory card four">
+          <span class="card-inner">
+            <span class="card-front">
+              <img src="images/6.jpeg" alt="Moon and stars illustration">
+              <span class="photo-caption">Always better with you around</span>
+            </span>
+            <span class="card-back"><span class="quote-mark">“</span><span>If I could choose again, I'd still choose you.</span><small>♡ EVERY TIME</small></span>
+          </span>
+        </button>
+      </div>
+      <button class="primary-btn" id="letterBtn">There's a letter for you 💌</button>
+    </section>
+
+    <section class="screen letter-screen" id="letter">
+      <div class="eyebrow">A LITTLE NOTE FROM MY HEART</div>
+      <div class="letter-paper">
+        <div class="letter-flower">✿</div>
+        <p class="dear">To my favourite person,</p>
+        <div id="letterMessage">
+          <p>Mr.Vinod Varma U Know Something I am lucky not because I found love, but because I found "YOUUUU". </p>
+          <p>Inthaaa Manchodivii Nakuu Asalaa Elaa Dhorikav Bangaram....Ninnu Enni Mataluu anna Malli na Dhaggarikii Vasthav..Naku Nuvvu Inthalaa Alavatu Ayyav Nuvvu Lekundaa Asalaa Nenu Vundalenuu Bangaramm..</p>
+          <p>Not Just This Lifetime, In Every Lifetime, Naku Nuvve Malli Malli Kavalii...Entha Ninnu Pattinchukokudadhu Anukuntanoo Anthaku Minchii Premaa Ekkuva Ayipothundhii..</p>
+          <p>E Generation lo Nilantii Vaduu Dhorakadam Chala Adhrustam...Nannu Matram Life lo Asala Vadhalakuu Niku Entha Kopam Vachina , Chiraku Vachinaaa Nuvvu Lekunda Nenu Asalaa Vundalenuuu Anthaaa Pichii raa Nuvvu Antee...Nuvvu Nannu Thittina Nuvve Kavalii , Kottina Nuvve Kavalii..!</p>
+          <p>Thank You For Choosing Me Varma..E Life Ki Nuvvu Na Pakkana Vunte Chaluu raa Brathikesthaa..!!</p>
+          <p>"I LOVEEE YOUUUU SOOOO MUCHHHH BANGARAMMMM...♥"</p>
+        </div>
+        <p class="signoff">With love - Yours Varma <span>♥</span></p>
+      </div>
+      <p class="final-note">This is your reminder: you are loved. 🌷</p>
+      <button class="secondary-btn" id="restartBtn">Read it all again ↺</button>
+    </section>
+    <footer>made with ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
